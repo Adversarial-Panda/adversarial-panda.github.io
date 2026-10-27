@@ -12,3 +12,17 @@ if (dialog && typeof dialog.showModal === 'function') {
   dialog.querySelector('button').addEventListener('click', () => dialog.close());
   dialog.addEventListener('click', event => { if (event.target === dialog) { const r = dialog.getBoundingClientRect(); if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) dialog.close(); } });
 }
+
+const animationToggle = document.querySelector('#toggle-animations');
+if (animationToggle) {
+  const animations = document.querySelectorAll('[data-animation]');
+  function setAnimations(playing) {
+    animations.forEach(img => { img.src = playing ? img.dataset.animation : img.dataset.still; });
+    animationToggle.textContent = playing ? 'Stop animations' : 'Play animations';
+    animationToggle.setAttribute('aria-pressed', String(playing));
+  }
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) setAnimations(false);
+  animationToggle.addEventListener('click', () => {
+    setAnimations(animationToggle.getAttribute('aria-pressed') !== 'true');
+  });
+}

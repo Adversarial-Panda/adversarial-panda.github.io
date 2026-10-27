@@ -13,3 +13,12 @@
   .nav-links .nav-paper{border-left:0;border-top:1px solid var(--line);padding:20px 0 8px;margin-top:13px}
   .hero{padding-top:76px}
 }
+
+.demo-section{margin-top:48px;padding-top:36px;border-top:1px solid var(--line)}
+.demo-heading{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:17px}
+.demo-heading h3{margin:12px 0 0;font-size:26px;font-weight:600}
+.demo-heading button{flex-shrink:0;cursor:pointer;color:var(--ink);font-family:inherit}
+.demo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.demo-grid h4{font:600 16px/1.5 Georgia,"Times New Roman",serif;margin:0 0 12px}
+.demo-grid img{width:100%;border:1px solid var(--line)}
+@media(max-width:700px){.demo-heading{align-items:flex-start;flex-direction:column;gap:15px}.demo-grid{grid-template-columns:1fr;gap:28px}.demo-heading h3{font-size:24px}}
