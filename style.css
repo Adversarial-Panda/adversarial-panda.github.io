@@ -37,3 +37,7 @@ p,figcaption{ text-wrap:pretty; }
 
 .keep-together{white-space:nowrap}
 .dataset-list span{display:block}
+
+.demonstrations>.demo-heading .section-heading{margin-bottom:0}
+.demo-grid img[data-animation*="google-cloud-vision"]{aspect-ratio:960/492}
+.demo-grid img[data-animation*="gemini"]{aspect-ratio:960/510}

@@ -30,3 +30,5 @@ The public GIFs and still previews have baked-in blurring over terminal account 
 ## Web vision video demonstrations
 
 The demonstration section follows the framework figure and precedes Overview. Google Cloud Vision is split at 14 seconds; Gemini is split at 17 seconds. In each source, the first segment shows the benign input and the second shows its adversarial counterpart. Four H.264 MP4 clips with native playback/fullscreen controls and static posters accompany the two redacted terminal animations. The full uploaded source recordings remain local and are excluded from Git. Body text uses improved line wrapping and headings use balanced wrapping.
+
+The four web vision demos now display as looping GIFs at original speed (960 pixels wide, 10 fps), with click-to-enlarge and the shared stop/play control. Reduced-motion mode uses their static posters. The MP4 clips are retained as source assets.
